@@ -1,0 +1,5 @@
+[user]
+	name = Torvex
+	email = torvex.gen@gmail.com
+[core]
+	editor = nvim
