@@ -1,0 +1,141 @@
+# == Classic ==
+# Це опція для активації сумісності з `ls`.
+# Впливає на параметри "color"->"when", "sorting"->"dir-grouping", "date"
+# і "icons"->"when".
+# Можливі значення: false, true
+classic: false
+
+# == Blocks ==
+# Визначає колонки та їх порядок у форматах "long" і "tree".
+# Можливі значення: permission, user, group, context, size, date, name, inode, links, git
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+
+# == Color ==
+# Налаштування кольорової схеми.
+color:
+  # Коли використовувати кольоровий вивід.
+  # Якщо "classic" увімкнено, встановлено значення "never".
+  # Можливі значення: never, auto, always
+  when: auto
+  # Як використовувати кольори.
+  # Якщо "classic" увімкнено, встановлено значення "no-color".
+  # Можливі значення: default, custom
+  # Якщо вибрано "custom", lsd шукатиме файл `colors.yaml` у директорії конфігурації.
+  theme: default
+
+# == Date ==
+# Визначає формат дати для колонки з датою.
+# Можливі значення: date, locale, relative, '+<date_format>'
+date: date
+
+# == Dereference ==
+# Визначає, чи слід розрізняти символічні посилання.
+# Можливі значення: false, true
+dereference: false
+
+# == Display ==
+# Які елементи показувати.
+# Можливі значення: all, almost-all, directory-only
+# display: all
+
+# == Icons ==
+icons:
+  # Коли використовувати іконки.
+  # Якщо "classic" увімкнено, встановлено значення "never".
+  # Можливі значення: always, auto, never
+  when: auto
+  # Тема для іконок.
+  # Можливі значення: fancy, unicode
+  theme: fancy
+  # Розділювач між іконкою та назвою файлу.
+  separator: "  "
+
+# == Ignore Globs ==
+# Список шаблонів, які потрібно ігнорувати під час переліку файлів.
+# ignore-globs:
+#   - .git
+
+# == Indicators ==
+# Чи додавати індикатори до певних файлів.
+# Можливі значення: false, true
+indicators: false
+
+# == Layout ==
+# Вибір макету.
+# Можливі значення: grid, tree, oneline
+layout: grid
+
+# == Recursion ==
+recursion:
+  # Чи активувати рекурсивний перегляд.
+  # Можливі значення: false, true
+  enabled: false
+  # Глибина рекурсії. Позитивне число або без обмежень.
+  # depth: 3
+
+# == Size ==
+# Формат розміру файлів у колонці.
+# Можливі значення: default, short, bytes
+size: default
+
+# == Permission ==
+# Формат відображення прав доступу.
+# Можливі значення: rwx, octal, attributes (windows only), disable
+# permission: rwx
+
+# == Sorting ==
+sorting:
+  # Колонка, за якою здійснюється сортування.
+  # Можливі значення: extension, name, time, size, version
+  column: name
+  # Чи слід змінити порядок сортування на зворотний.
+  # Можливі значення: false, true
+  reverse: false
+  # Групування директорій.
+  # Якщо "classic" увімкнено, встановлено значення "none".
+  # Можливі значення: first, last, none
+  dir-grouping: first
+
+# == No Symlink ==
+# Чи слід приховувати посилання на ціль символічного посилання.
+# Можливі значення: false, true
+no-symlink: false
+
+# == Total size ==
+# Чи відображати загальний розмір директорій.
+# Можливі значення: false, true
+total-size: true
+
+# == Hyperlink ==
+# Додавати гіперпосилання до назв файлів.
+# Можливі значення: always, auto, never
+hyperlink: never
+
+# == Symlink arrow ==
+# Символ для відображення стрілки у символічних посиланнях.
+symlink-arrow: ⇒
+
+# == Header ==
+# Чи відображати заголовки колонок.
+# Можливі значення: false, true
+header: true
+
+# == Literal ==
+# Чи додавати лапки до назв файлів.
+# Можливі значення: false, true
+literal: false
+
+# == Truncate owner ==
+# Як скорочувати імена користувача та групи.
+truncate-owner:
+  # Кількість символів, які потрібно залишити. Якщо не вказано — скорочення не відбувається.
+  after:
+  # Символ, який додається після скорочення.
+  marker: ""
+
