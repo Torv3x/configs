@@ -64,7 +64,7 @@ alias warps="warp-cli status"     # Статус з'єднання з Warp
 
 # Запуск скриптів
 alias sync_configs="$HOME/Files/Bash/sync_configs.sh" # Скрипт для синхронізації конфігураційних файлів у локальний репозиторій Git
-alias deploy_configs="$HOME/Files/Bash/deploy_configs" # Скрипт для завантаження конфігураційних файлів з Github
+alias deploy_configs="$HOME/Files/Bash/deploy_configs.sh" # Скрипт для завантаження конфігураційних файлів з Github
 
 
 # ========== END ALIASES ==========
