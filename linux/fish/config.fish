@@ -1,7 +1,9 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
-end
+    # Команди для виконання в інтерактивних сеансах можна розміщувати тут
 
+
+
+end
 
 
 
@@ -61,7 +63,8 @@ alias warpd="warp-cli disconnect"     # Відключення від Warp
 alias warps="warp-cli status"     # Статус з'єднання з Warp
 
 # Запуск скриптів
-alias sync_configs="$HOME/Files/Bash/sync_configs.sh"
+alias sync_configs="$HOME/Files/Bash/sync_configs.sh" # Скрипт для синхронізації конфігураційних файлів у локальний репозиторій Git
+
 
 # ========== END ALIASES ==========
 

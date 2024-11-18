@@ -119,8 +119,8 @@ hyperlink: never
 
 # == Symlink arrow ==
 # Символ для відображення стрілки у символічних посиланнях.
-symlink-arrow: ⇒
-
+# Іконки:     
+symlink-arrow: 󰁕 
 # == Header ==
 # Чи відображати заголовки колонок.
 # Можливі значення: false, true
