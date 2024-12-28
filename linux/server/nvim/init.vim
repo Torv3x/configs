@@ -22,21 +22,10 @@ set softtabstop=4
 "Включає підтримку миші
 set mouse=a
 
-" Створює скорочену команду для збереження файлу через sudo за допомогою плагіна Vim-Suda.
-" Замість повної команди 'w suda://%' можна використовувати команду 'W'.
-command! W w suda://%
-
 
 " === Плагіни (vim-plug) ===
 
 call plug#begin()
-
-"Теми
-
-"Plug 'crusoexia/vim-monokai'
-"Plug 'folke/tokyonight.nvim'
-"Plug 'sainnhe/sonokai'
-
 
 "Змінює вигляд нижньої полоси стану
 Plug 'vim-airline/vim-airline'
@@ -49,9 +38,6 @@ Plug 'tpope/vim-commentary'
 
 "Мультикурсор
 Plug 'terryma/vim-multiple-cursors'
-
-" Копіювання в системний буфер
-Plug 'christoomey/vim-system-copy'
 
 call plug#end()
 " =======================================
@@ -127,12 +113,4 @@ map Ь M
 map Б <
 map Ю >
 " =======================================
-"
-" === Теми ===
-"colorscheme monokai
-"colorscheme tokyonight
-"let g:sonokai_style = 'andromeda'
-"colorscheme sonokai
-
-
 
