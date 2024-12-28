@@ -1,0 +1,41 @@
+section: screens
+	Torvex-PC:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		preserveFocus = false
+		switchCorners = none +top-right 
+		switchCornerSize = 99
+	ThinkPad-Windows:
+		halfDuplexCapsLock = false
+		halfDuplexNumLock = false
+		halfDuplexScrollLock = false
+		xtestIsXineramaUnaware = false
+		preserveFocus = false
+		switchCorners = none +top-left 
+		switchCornerSize = 99
+end
+
+section: aliases
+end
+
+section: links
+	Torvex-PC:
+		right = ThinkPad-Windows
+	ThinkPad-Windows:
+		left = Torvex-PC
+end
+
+section: options
+	relativeMouseMoves = false
+	screenSaverSync = true
+	win32KeepForeground = false
+	clipboardSharing = false
+	clipboardSharingSize = 100000000
+	switchCorners = none +top-left 
+	switchCornerSize = 99
+	keystroke(Alt+1) = switchToScreen(Torvex-PC)
+	keystroke(Alt+2) = switchToScreen(ThinkPad-Windows)
+end
+
