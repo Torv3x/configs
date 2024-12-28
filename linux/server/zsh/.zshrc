@@ -94,4 +94,5 @@ fi
 # Приклад:
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="vim ~/.oh-my-zsh"
+source ~/.oh-my-zsh/custom/aliases.zsh
 

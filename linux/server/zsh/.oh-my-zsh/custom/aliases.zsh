@@ -55,8 +55,8 @@ alias myip='curl ifconfig.me'     # Виводить на екран вашу п
 
 # === Ноди ===
 #
-alias lxlogs-t="docker logs elixir -f"
-alias lxlogs-m="docker logs elixirMainnet -f"
+alias elxlogs-t="docker logs elixir -f"
+alias elxlogs-m="docker logs elixirMainnet -f"
 alias nillogs="docker logs nillion -f"
 alias glogs="docker logs glacier-verifier -f"
 
