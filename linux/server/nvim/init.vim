@@ -23,8 +23,8 @@ set softtabstop=4
 set mouse=a
 
 " Створює скорочену команду для збереження файлу через sudo за допомогою плагіна Vim-Suda.
-" Замість повної команди 'w suda://%' можна використовувати 'SudaW'.
-command! SudaW w suda://%
+" Замість повної команди 'w suda://%' можна використовувати команду 'W'.
+command! W w suda://%
 
 
 " === Плагіни (vim-plug) ===
@@ -33,18 +33,10 @@ call plug#begin()
 
 "Теми
 
-Plug 'crusoexia/vim-monokai'
-Plug 'folke/tokyonight.nvim'
-Plug 'sainnhe/sonokai'
+"Plug 'crusoexia/vim-monokai'
+"Plug 'folke/tokyonight.nvim'
+"Plug 'sainnhe/sonokai'
 
-
-" Плагін для збереження файлів із правами sudo без повторного відкриття файлу.
-" Стандартна команда для збереження через sudo: 'SudaWrite'.
-Plug 'lambdalisue/suda.vim'
-
-
-"Плагін "emmet"
-Plug 'mattn/emmet-vim'
 
 "Змінює вигляд нижньої полоси стану
 Plug 'vim-airline/vim-airline'
@@ -52,14 +44,8 @@ Plug 'vim-airline/vim-airline'
 "Відображає HEX кольори
 Plug 'ap/vim-css-color'
 
-"Каталог файлів у боковому меню
-Plug 'scrooloose/nerdtree'
-
 "Позволяє швидко закоментовувати текст
 Plug 'tpope/vim-commentary'
-
-"Іконки для VIM
-Plug 'ryanoasis/vim-devicons'
 
 "Мультикурсор
 Plug 'terryma/vim-multiple-cursors'
@@ -71,9 +57,6 @@ call plug#end()
 " =======================================
 
 " === Горячі клавіші ===
-
-"NERDTree (Відкриває та закриває бокове меню файлів)
-nnoremap <C-b> :NERDTreeToggle<CR>
 
 
 "Включає можливість введення команд в укр розкладці
@@ -147,9 +130,9 @@ map Ю >
 "
 " === Теми ===
 "colorscheme monokai
-colorscheme tokyonight
-let g:sonokai_style = 'andromeda'
-colorscheme sonokai
+"colorscheme tokyonight
+"let g:sonokai_style = 'andromeda'
+"colorscheme sonokai
 
 
 
